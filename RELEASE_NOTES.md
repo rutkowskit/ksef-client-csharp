@@ -1,5 +1,12 @@
 # Rejestr zmian
 
+## Wersja 2.8.1
+### Nowe
+- Dodano wartość `CollectiveIdentifierManage` do enumów uprawnień dla podmiotów oraz uprawnień pośrednich:
+  - `EntityStandardPermissionType` (żądanie nadania uprawnień dla podmiotu `POST /permissions/entities/grants`),
+  - `PermissionScope` (odpowiedź zapytania o uprawnienia podmiotów `POST /permissions/query/entities/grants`),
+  - `IndirectEntityStandardPermissionType` (żądanie nadania uprawnień pośrednich `POST /permissions/indirect/grants`).
+
 ## Wersja 2.8.0
 ### Nowe
 - `EffectiveApiRateLimits`: dodano pola `OnlineSessionClose`, `BatchSessionClose`, `Anonymous` oraz `Global` zgodnie z kontraktem API 2.8.0 (domyślne limity zamykania sesji: `20/60/240` i `20/40/120`).
